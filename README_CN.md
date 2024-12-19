@@ -33,15 +33,15 @@
 
 ```shell
 # Force XcodeLLM to be eligible
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install util xcodellm
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install util xcodellm
 # Force Apple Intelligence to be eligible
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install util greymatter
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install util greymatter
 # Force Cleanup to be eligible
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install util strontium
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install util strontium
 # For Apple Intelligence + Cleanup
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install override greymatter+strontium
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install override greymatter+strontium
 # For XcodeLLM + Apple Intelligence + Cleanup
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install override xcodellm+greymatter+strontium
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install override xcodellm+greymatter+strontium
 ```
 
 ### 方案二 override 文件
@@ -50,9 +50,9 @@ curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/s
 
 ```shell
 # Override XcodeLLM only
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install override xcodellm
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install override xcodellm
 # Override Apple Intelligence only
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install override greymatter
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- install override greymatter
 ```
 
 > [!NOTE]
@@ -68,24 +68,24 @@ curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/s
 
 ```shell
 # For XcodeLLM:
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall util xcodellm
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall util xcodellm
 # For Apple Intelligence
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall util greymatter
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall util greymatter
 # For Clenaup as part of Apple Intelligence feature
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall util strontium
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall util strontium
 ```
 
 ### 方案二 override 文件
 
 ```shell
 # For XcodeLLM:
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall override xcodellm
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall override xcodellm
 # For Apple Intelligence
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall override greymatter
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall override greymatter
 # For Apple Intelligence + Cleanup
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall override greymatter+strontium
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall override greymatter+strontium
 # For XcodeLLM + Apple Intelligence + Cleanup
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall override xcodellm+greymatter+strontium
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- uninstall override xcodellm+greymatter+strontium
 ```
 
 ## 手动执行
@@ -96,7 +96,7 @@ curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/s
 
 2. 添加启动参数 `sudo nvram boot-args="amfi_get_out_of_my_way=1"`并**重启**
 
-3. 从[发布页面](https://github.com/Kyle-Ye/XcodeLLMEligible/releases)下载可执行文件 `eligibility_util` 并添加执行权限。
+3. 从[发布页面](https://github.com/betaer/XcodeLLMEligible/releases)下载可执行文件 `eligibility_util` 并添加执行权限。
 
 > 以下的命令假设下载的文件在 `~/Downloads` 文件夹。
 
@@ -134,9 +134,9 @@ cd ~/Downloads
 
 1. 从[发布页面](https://github.com/Kyle-Ye/XcodeLLMEligible/releases)下载需要的 `*.eligibility_overrides.data` 文件并重命名为 `eligibility_overrides.data`
 
-> 对于 Xcode LLM，下载 [xcodellm.eligibility_overrides.data](https://github.com/Kyle-Ye/XcodeLLMEligible/releases/download/0.2.0/xcodellm.eligibility_overrides.data)
+> 对于 Xcode LLM，下载 [xcodellm.eligibility_overrides.data](https://github.com/betaer/XcodeLLMEligible/releases/download/0.2.0/xcodellm.eligibility_overrides.data)
 > 
-> 对于 Apple Intelligence，下载 [greymatter.eligibility_overrides.data](https://github.com/Kyle-Ye/XcodeLLMEligible/releases/download/0.2.0/greymatter.eligibility_overrides.data)
+> 对于 Apple Intelligence，下载 [greymatter.eligibility_overrides.data](https://github.com/betaer/XcodeLLMEligible/releases/download/0.2.0/greymatter.eligibility_overrides.data)
 
 2. 在 `/private/var/root/Library/Daemon\ Containers` 下找到 `eligibilityd` 的容器 UUID
 
@@ -193,7 +193,7 @@ zsh permission denied: ./eligibility_util
 4. 其他问题
 
 ```shell
-curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- doctor
+curl -L https://raw.githubusercontent.com/betaer/XcodeLLMEligible/release/0.2/scripts/override.sh | bash -s -- doctor
 ```
 
 ### 方案二 override 文件问题
@@ -211,7 +211,7 @@ curl -L https://raw.githubusercontent.com/Kyle-Ye/XcodeLLMEligible/release/0.2/s
 
 2. 重新启用 SIP，然后打开 Xcode 下载模型。
 
-See detail for [#4](https://github.com/Kyle-Ye/XcodeLLMEligible/issues/4)
+See detail for [#4](https://github.com/betaer/XcodeLLMEligible/issues/4)
 
 ### 其他 Apple Intelligence 相关问题
 
